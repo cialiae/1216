@@ -1,0 +1,121 @@
+<html> 
+<head>
+<meta charset="utf-8"> 
+<title> ( ◜‿◝ )♡ </title>
+<style> 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #4D6B45;
+}
+
+.wrapper {
+  height: 200px;
+  width: 300px;
+  background-color: #ACC4A6;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+.lid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid transparent;
+  transform-origin: top;
+  transition: transform 0.25s linear;
+}
+
+.lid.one {
+  border-top: 100px solid #87AF7D;
+  transform: rotateX(0deg);
+  z-index: 3;
+  transition-delay: 0.75s;
+}
+.lid.two {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 100px solid transparent;
+  border-right: 150px solid #87AF7D;
+  border-bottom: 100px solid #87AF7D;
+  border-left: 150px solid #82AA77;
+  z-index: 3;
+}
+
+.letter {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 80%;
+  background-color: F6F8D3;
+  border-radius: 15px;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.letter p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  color: black;
+  font-family: Times New Roman;
+}
+.wrapper:hover .lid.one {
+    transform: rotateX(90deg);
+    transition-delay: 0s;
+}
+
+.wrapper:hover .lid.two {
+    transform: rotateX(0deg);
+    transition-delay: 0.25s;
+}
+
+.wrapper:hover .letter {
+  transform: translateY(-50px);
+  transition-delay: 0.5s;
+}
+
+#button { 
+  background-color: F6F8D3;
+  font-family: Arial;
+  position:fixed;
+  bottom: 700px;
+  left: 50%;
+  transform: translateX(-50%)
+} 
+</style>
+</head> 
+<body> 
+ <div class="wrapper">
+      <div class="lid one"></div>
+      <div class="lid two"></div>
+      <div class="envelope"></div>
+      <div class="letter">
+        <p> Hello, my Ji! </p>
+      </div>
+    </div> <br> 
+    
+    
+ <div> 
+ <a href= "flowers.html"><input type="button" value="click me <3" id="button"> 
+</div> 
+</body> 
+</html>
